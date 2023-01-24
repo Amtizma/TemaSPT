@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine
+MAINTAINER denesflorin
+COPY target/TemaSPT.jar tema.jar
+ENTRYPOINT ["java","-jar","/tema.jar"]
